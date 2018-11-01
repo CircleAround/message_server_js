@@ -1,7 +1,7 @@
 # Message Server Client by JavaScript
 
 ## これは何ですか？
-[message_server](https://github.com/CircleAround/message_server) に通信を行なって操作するクライアントです。JavaScriptで書かれています。
+[message_server](https://github.com/CircleAround/message_server) に通信を行なって操作するクライアントです。JavaScriptで書かれています。
 
 https://message-server-js-app.herokuapp.com/
 で動いています。
