@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>メッセージ</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+  </head>  
+  <body id="message-component">
+    <header>
+      <div class="container">
+        <div class="user_email"></div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="alert"></div>
+        <div class="content_wrapper"></div>
+      </div>
+    </main>
+    <footer>
+      これはテスト用のサービスです。<br>
+      <a class="host"></a>に情報を送受信できます。
+      <div>
+        APIはHerokuで動作させているので、通信が遅い場合があります。
+      </div>
+    </footer>
+
+    <script id="login_panel_template" type="text/template">
+      <div class="content_wrapper">
+        <h1>ログイン</h1>
+        <form class="login_form">
+          <input type="text" class="email" value="test2@example.com" placeholder="Email">
+          <button type="button">ログインする</button>
+        </form>
+        
+        <h1>新規ユーザー登録</h1>
+        <form class="signup_form">
+          <input type="text" class="email" placeholder="Emailで登録">
+          <button type="button">サインアップする</button>
+        </form>
+      </div>  
+    </script>
+
+    <script id="message_template" type="text/template">
+      <div class="message">
+        <div class="user">user:<span class="id"></span></div>      
+        <div class="contents"></div>
+        <div class="actions">
+          <a class="edit" href="javascript:void(0)">編集</a>
+          <a class="delete" href="javascript:void(0)">削除</a>
+        </div> 
+      </div>
+    </script>
+
+    <script id="message_panel_template" type="text/template">
+      <div class="content_wrapper">
+        <form class="message_form">
+          <textarea class="contents" row=10 col=20></textarea>
+          <div class="actions">
+            <button type="button">送信する</button>
+          </div>
+        </form>
+        <div class="messages"></div>
+      </div>
+    </script>
+  </body>  
+</html>
